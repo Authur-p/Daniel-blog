@@ -179,7 +179,7 @@ def show_post(post_id):
         )
         db.session.add(new_comment)
         db.session.commit()
-        # return redirect(url_for("show_post", ))
+
     return render_template("post.html", post=requested_post, logged_in=current_user.is_authenticated, form=form)
 
 
