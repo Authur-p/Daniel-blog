@@ -28,7 +28,7 @@
           <hr>
 
             <div class="clearfix">
-          {% if current_user.id == 1 or current_user.email == 'danielopeyemi840@gmail.com' %}
+          {% if current_user.id == 1 or current_user.email == my_mail %}
             <a class="btn btn-primary float-right" href="{{url_for('edit_post', post_id=post.id)}}">Edit Post</a>
           {% endif %}
             </div>
